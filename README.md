@@ -19,7 +19,7 @@
     - Clone the repository to your local computer using Git.
 
 2. File Organization: 
-    - Download the starter files from [Starter_Code](https://github.com/mjardinico/CryptoCurrency/tree/main/Resources).
+    - Download the starter files from [Starter_Code](https://github.com/mjardinico/CryptoClustering/tree/main/Resources/Starter_Code).
     - Create a directory called `Resources` and save the `crypto_market_data.csv` in it.
 
 3. HTML Setup:
