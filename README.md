@@ -6,9 +6,6 @@
 ### Project Overview
 `Utilize your understanding of Python and unsupervised learning techniques to determine whether cryptocurrency values are influenced by changes in price over 24-hour and 7-day periods.`
 
-![USGS Map of Earthquake](https://github.com/mjardinico/leaflet-challenge/blob/main/Leaflet-Part-1/Images/BasicMap2.png) 
-
-
 ### Working Files
 1. `Crypto_Clustering.ipynb`
 2. `/Resources/crypto_market_data.csv`
@@ -21,15 +18,22 @@
 2. File Organization: 
     - Download the starter files from [Starter_Code](https://github.com/mjardinico/CryptoClustering/tree/main/Resources/Starter_Code).
     - Create a directory called `Resources` and save the `crypto_market_data.csv` in it.
+    - Use the [Crypto_Clustering.ipynb](https://github.com/mjardinico/CryptoClustering/blob/main/Crypto_Clustering.ipynb) as the main code.
 
-3. HTML Setup:
-    - In the Leaflet-Part-1 directory, create an index.html file.
-    - Edit the index.html file to include the necessary HTML structure.
-    - Include the Leaflet CSS file in the `<head>` section, and add the Leaflet JavaScript file after the CSS file. You can refer to the [Leaflet.js quick startup guide](https://leafletjs.com/examples/quick-start/) for guidance.
-
-4. Data Retrieval:
-    - Visit the [USGS GeoJSON Feed page](https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php) to choose a dataset for visualization.
-    - Use the selected dataset's URL as input to the D3.js library to pull the data. This data retrieval and parsing can be handled in a JavaScript file, e.g., `logic.js`, which should be placed in the `/static/js` directory.
+3. Dependencies
+    - import pandas
+    - import hvplot.pandas
+    - from sklearn.cluster import KMeans
+    - from sklearn.decomposition import PCA
+    - from sklearn.preprocessing import StandardScaler
+   
+4. Prepare the Data
+    - Use the `StandardScaler()` from `scikit-learn` to normalize the data
+    - Create a DataFrame with the scaled data and set the "coin-id" index as shown below
+    ![Crypto DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/crypto_dataframe1.png)
+    
+    - Create an elbow curve to find the best value of k 
+    
 
 5. Mapping Data:
     - Create a Leaflet map instance in your JavaScript file, and set its initial view coordinates.
