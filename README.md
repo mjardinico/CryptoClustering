@@ -28,9 +28,12 @@
     - from sklearn.decomposition import PCA
     - from sklearn.preprocessing import StandardScaler
    
-4. __Data Processing__
+4. __Data Processing__  
+
+`NOTE: Rendering of interactive plots on GitHub is not supported. Use Jupyter Notebook to view interactive plots correctly.`
+
     - __Normalize the Data:__ Use the `StandardScaler()` from `scikit-learn` to normalize the data.
-    - Create Scaled DataFrame: Construct a DataFrame with the scaled data, ensuring the "coin-id" is set as the index.
+    - __Create Scaled DataFrame:__ Construct a DataFrame with the scaled data, ensuring the "coin-id" is set as the index.
     ![Crypto Currency DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/crypto_dataframe1.png)
     
     - __Elbow Curve:__ Generate an elbow curve to identify the optimal value of k. 
