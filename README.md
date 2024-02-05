@@ -32,15 +32,18 @@
 
 `NOTE: Rendering of interactive plots on GitHub is not supported. Use Jupyter Notebook to view interactive plots correctly.`
 
-    - __Normalize the Data:__ Use the `StandardScaler()` from `scikit-learn` to normalize the data.
-    - __Create Scaled DataFrame:__ Construct a DataFrame with the scaled data, ensuring the "coin-id" is set as the index.
+    - Normalize the Data: Use the `StandardScaler()` from `scikit-learn` to normalize the data.
+
+    - Create Scaled DataFrame: Construct a DataFrame with the scaled data, ensuring the "coin-id" is set as the index.
     ![Crypto Currency DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/crypto_dataframe1.png)
     
-    - __Elbow Curve:__ Generate an elbow curve to identify the optimal value of k. 
+    - Elbow Curve: Generate an elbow curve to identify the optimal value of k. 
     ![Elbow Curve](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/elbow_curve.png)
 
-    - __Principal Component Analysis (PCA):__ Optimize clusters using PCA.
+    - Principal Component Analysis (PCA): Optimize clusters using PCA.
     ![PCS DataFrame](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/PCA_DataFrame.png)
 
-    - __Cluster Scatter Plot:__ Create a scatter plot using `hvplot` using `KMeans`
+    - Cluster Scatter Plot: Create a scatter plot using `hvplot` using `KMeans`
     ![PCA Scatter Plot](https://github.com/mjardinico/CryptoClustering/blob/main/Resources/cluster_scatterplot1.png)
+
+
